@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="theme-color" content="#000000"> -->
+  <title>myChallenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Welcome</h1>
+  <h3>簡単なゲームを作ってみました！</p>ぜひ、遊んでいってください</h3>
+  <div class="game-rule">
+    <p><span class="rule">-ルール-</span><br>レースの結果を予想するゲームです。<br>何番の動物がレースで優勝するか予想をしてください。<br>
+      うさぎとかめの物語のように足の速い動物が<br>必ず優勝するわけではありません。</p>
+    <ol id="list">
+      <li>優勝すると予想した動物の番号を入力欄に記入</li>
+      <li>STARTボタンをクリック!!!</li>
+      <li>レース結果を待つ🐊</li>
+    </ol>
+  </div>
+  <h4>では、予想をしてください！！</h4>
+  <!-- 選択肢と情報を載せるところ -->
+  <ul>
+    <li>
+      <img id="penguin" src="penguin.gif">
+      <p class="animalName">1.ペンギン</p>
+      <p class="odds">8</p>
+    </li>
+    <li>
+      <img id="raccoons" src="raccoons.gif">
+      <p class="animalName">2.たぬき</p>
+      <p class="odds">6</p>
+    </li>
+    <li>
+      <img id="panda" src="panda.gif">
+      <p class="animalName">3.パンダ</p>
+      <p class="odds">3</p>
+    </li>
+    <li>
+      <img id="pig" src="pig.gif">
+      <p class="animalName">4.ぶた</p>
+      <p class="odds">2</p>
+    </li>
+    <li>
+      <img id="dog" src="dog.gif">
+      <p class="animalName">5.いぬ</p>
+      <p class="odds">1.5</p>
+    </li>
+  </ul>
+
+  <br>
+  <input type="number" id="bet-oct" name="bet-oct" min="100" step="100" />
+  <input type="number" id="select-number" name="select-number" min="1" max="5" />
+  <input type="button" value="STRAT" id="start-button" />
+  <div>
+    <p id="oct">💰 1,000 OCT</p>
+  </div>
+  <dialog>
+    <h4>レース結果を開く</h4>
+    <input type="button" value="Open!!" id="result-open"/>
+  </dialog>
+  <p id="old-result">《これまでの結果》</p>
+  <div class="messagebox">
+    <p id="result-record"></p>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

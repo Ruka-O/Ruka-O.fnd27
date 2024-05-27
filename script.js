@@ -131,7 +131,7 @@ secret.addEventListener("click", function () { passwordInput.showModal() });
 passwordSend.addEventListener("click", () => {
   const passwordWrite = document.getElementById("password-write").value;
   if (password === passwordWrite) {
-    open("./indexura.html");
+    open("https://ruka-o.github.io/Ruka-O.fnd27-2/");
   }
   passwordInput.close();
 })

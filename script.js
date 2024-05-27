@@ -131,7 +131,7 @@ secret.addEventListener("click", function () { passwordInput.showModal() });
 passwordSend.addEventListener("click", () => {
   const passwordWrite = document.getElementById("password-write").value;
   if (password === passwordWrite) {
-    open("./index2.html");
+    open("./indexura.html");
   }
   passwordInput.close();
 })

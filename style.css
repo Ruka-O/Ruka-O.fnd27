@@ -38,10 +38,6 @@ h1 {
   text-align: left;
 }
 
-#bet-oct {
-  width: 50px;
-}
-
 #list {
   text-align: left;
 }
@@ -109,18 +105,5 @@ dialog {
   font-size: 30px;
 }
 #oneresult-comment {
-  font-size: 20px;
-}
-#oct {
-  font-size: 20px;
-  font-weight: 700;
-}
-#bank-borrow{
-  background: black;
-  color: yellow;
-}
-#debt{
-  color: red;
-  font-weight: 700;
   font-size: 20px;
 }

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- <meta name="theme-color" content="#000000"> -->
-  <title>myChallenge_bank</title>
+  <title>myChallenge_back</title>
   <link rel="stylesheet" href="back-style.css">
 </head>
 
@@ -56,10 +56,10 @@
 
   <br>
   <div>
-    <label class="expected-input">BET:</label>
-    <input type="number" id="bet-oct" name="bet-oct" min="100" step="100" />
     <label class="expected-input">予想:</label>
     <input type="number" id="select-number" name="select-number" min="1" max="5" />
+    <label class="expected-input">BET:</label>
+    <input type="number" id="bet-oct" name="bet-oct" min="100" step="100" />
   </div>
   <button id="start-button">START</button>
   <div>
@@ -78,7 +78,11 @@
     <button id="result-close">Close</button><br><br>
   </dialog>
   <dialog id="bank-help">
-    <h4>OCTがなくなりました・・・。<br>借金をして続けますか？<br>※ゲーム終了を選択した場合、<br>これまでの結果は削除されます。</h4>
+    <h4>OCTがなくなりました・・・。<br>
+      借金をして続けますか？<br><br>
+      ※ゲーム終了を選択した場合、<br>
+      これまでの結果は削除されます。
+    </h4>
     <p id="now-oct"></p>
     <button id="bank-open">借りる</button>
     <button id="finish">ゲーム終了</button>

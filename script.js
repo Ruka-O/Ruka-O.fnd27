@@ -124,14 +124,14 @@ resultClose.addEventListener("click", () => {
     passwordShow.showModal();
     passwordOpen.innerText = password;
   }
-});
+})
 
 passwordShowClose.addEventListener("click", function () { passwordShow.close() });
 secret.addEventListener("click", function () { passwordInput.showModal() });
 passwordSend.addEventListener("click", () => {
   const passwordWrite = document.getElementById("password-write").value;
   if (password === passwordWrite) {
-    open("indexura.html");
+    location.replace("indexura.html");
   }
   passwordInput.close();
 })

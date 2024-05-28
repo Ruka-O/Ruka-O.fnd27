@@ -136,3 +136,6 @@ button{
   border: 0;
   border-bottom: 5px solid rgb(108, 142, 108);
 }
+#bank-help{
+  font-size: 20px;
+}

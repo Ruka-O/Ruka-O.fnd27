@@ -88,22 +88,57 @@ ul {
 }
 
 dialog {
-  width: 500px;
+  width: 550px;
   height: 60%;
-  vertical-align: auto;
+  background: floralwhite;
 }
 #dialog-open {
   font-size: 30px;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
 }
 #cat-fish {
   width: 300px;
   height: auto;
 }
 #dialog-close {
+  padding: auto;
   font-size: 30px;
 }
 #oneresult-comment {
   font-size: 20px;
+}
+#password-show{
+  line-height:initial;
+  font-size: 20px;
+  padding: auto;
+}
+#password{
+  font-size: 25px;
+  font-weight: 700;
+  color: mediumvioletred;
+}
+.under-line{
+  border-bottom: double 4px #ff8888;
+}
+#password-input{
+  font-size: 20px;
+  font-weight: 500;
+  background: dimgray;
+  color: floralwhite;
+}
+#entrance{
+  font-size: 25px;
+  font-weight: 600;
+  color: chocolate;
+}
+button{
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background:rgb(255, 195, 255);
+  border: 0;
+  border-bottom: 5px solid rgb(235, 158, 235);
 }

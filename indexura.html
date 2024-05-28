@@ -10,14 +10,16 @@
 </head>
 
 <body>
-  <h1 id="secret">🐊Welcome🐊</h1>
+  <h1 id="secret">Welcome</h1>
   <h3>簡単なゲームを作ってみました！</p>ぜひ、遊んでいってください</h3>
   <div class="game-rule">
     <p><span class="rule">-ルール-</span><br>レースの結果を予想するゲームです。<br>何番の動物がレースで優勝するか予想をしてください。<br>
-      うさぎとかめの物語のように足の速い動物が<br>必ず優勝するわけではありません。</p>
+      うさぎとかめの物語のように足の速い動物が<br>必ず優勝するわけではありません。<br>
+      選択肢の下の数字はその動物のオッズになっています。
+    </p>
     <ol id="list">
       <li>優勝すると予想した動物の番号を入力欄に記入</li>
-      <li>BETする額を決めて入力</li>
+      <li>BETする額を決めて入力🐊</li>
       <li>STARTボタンをクリック!!!</li>
       <li>レース結果を待つ</li>
     </ol>
@@ -59,7 +61,7 @@
     <label class="expected-input">予想:</label>
     <input type="number" id="select-number" name="select-number" min="1" max="5" />
   </div>
-  <input type="button" value="STRAT" id="start-button" />
+  <button id="start-button">START</button>
   <div>
     <p id="oct">💰 1,000 OCT</p>
     <p id="debt"></p>
@@ -72,21 +74,21 @@
   <dialog id="dialog-close">
     <h4>《結果》</h4>
     <p id="oneresult-comment"></p>
+    <img id="face" src="happy.gif"><br>
     <button id="result-close">Close</button><br><br>
-    <img id="face" src="happy.gif">
   </dialog>
   <dialog id="bank-help">
-    <h4>OCTがなくなりました・・・。<br>借金をして続けますか？<br>※ゲームを終了するを選択した場合、<br>これまでの結果は削除されます。</h4>
+    <h4>OCTがなくなりました・・・。<br>借金をして続けますか？<br>※ゲーム終了を選択した場合、<br>これまでの結果は削除されます。</h4>
     <p id="now-oct"></p>
     <button id="bank-open">借りる</button>
-    <button id="finish">ゲームを終了する</button>
+    <button id="finish">ゲーム終了</button>
   </dialog>
   <dialog id="bank-borrow">
     <h4>OCT―BANKへようこそ</h4>
-    <p>見掛け上OCTは増えますが借金をしていることをお忘れないように・・・<br>
+    <p>見掛け上OCTは増えますが<br>借金をしていることをお忘れないように・・・<br>
       返済できる額を借りるようにしてください。<br>
-      自分で返せないからといって<br>くれぐれも人の銀行から勝手に送金して<br>借金の返済をしないように🤡<br>
-      では、借りる金額を入力してOKをクリックしてください。</p>
+      自分で返せないからといって<br>くれぐれも人の銀行から勝手に送金して<br>借金の返済をしないように🤡<br></p>
+    <p>では、借りる金額を入力して<br>OKをクリックしてください。</p>
     <input type="number" id="borrow-oct" name="borrow-oct" step="100" />
     <button id="borrow">OK</button>
   </dialog>

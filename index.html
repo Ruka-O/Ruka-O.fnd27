@@ -51,7 +51,7 @@
     <label class="expected-input">予想:</label>
     <input type="number" id="select-number" name="select-number" min="1" max="5" />
   </div>
-  <input type="button" value="STRAT" id="start-button" />
+  <button id="start-button">START</button>
   <dialog id="dialog-open">
     <h4>レース結果を開く</h4>
     <img id="cat-fish" src="catfisf.gif"><br>
@@ -60,22 +60,25 @@
   <dialog id="dialog-close">
     <h4>《結果》</h4>
     <p id="oneresult-comment"></p>
+    <img id="face" src="happy.gif"><br>
     <button id="result-close">Close</button><br><br>
-    <img id="face" src="happy.gif">
   </dialog>
   <dialog id="password-show">
-    <p>"ウラ"モードへ切り替えるためにはパスワードを入力してください。<br>
-      パスワードがあっていれば、"ウラ"モードのウィンドウが開きます。<br>
-      間違っていた場合、このウィンドウは閉じられます。<br>
-      パスワードはゲームをすると表示されます。<br>
+    <p>ウラで遊ぶことが出来るパスワードです。<br>
+      "ウラ"モードで遊ぶために必要になります。<br>
+      このパスワードがないと"ウラ"モードでは<br>遊べませんのでご注意ください。<br>
+      <span class="under-line">ウラ"モードへの入り口は、もうすでに開いています。</span><br>
+      皆さんのことを歓迎しているので、<br>そこをクリックしてみてください。<br>
+      ヒントはレースに参加していない動物に注目です。
     </p>
     <p id="password"></p>
     <button id="password-show-close">Close</button>
   </dialog>
   <dialog id="password-input">
-    <p>ウラで遊ぶことが出来るパスワードです。<br>"ウラ"モードで遊ぶために必要になります。<br>
-      このパスワードがないと"ウラ"モードでは遊べませんのでご注意ください。<br>
-      パスワードの入力欄のヒントはレースに出ていない動物に注目です。
+    <p><span id="entrance">《"ウラ"モード入口》</span><br>"ウラ"モードへ切り替えるためには<br>パスワードを入力してください。<br>
+      パスワードがあっていれば、<br>"ウラ"モードのウィンドウが開きます。<br>
+      間違っていた場合、このウィンドウは閉じられます。<br>
+      パスワードはゲームをすると表示されます。<br>
     </p>
     <label>パスワード</label>
     <input type="password" id="password-write" name="password-write">

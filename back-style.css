@@ -1,24 +1,25 @@
 body {
-  background-color: lemonchiffon;
+  background-color: dimgray;
   text-align: center;
   font-family: Meiryo-UI;
   margin: auto;
+  color:lightgray;
 }
 
 h1 {
-  font-family: Broadway;
+  font-family: Chiller;
   color: chocolate;
-  font-size: 80px;
+  font-size: 100px;
   margin: 0;
 }
 
 .game-rule {
   width: fit-content;
   height: auto;
-  background-color: lightpink;
+  background-color:darkolivegreen;
   padding: 0.5em 1em;
   margin: 2em 0;
-  border: double 5px brown;
+  border: double 5px lightsteelblue;
   margin-left: auto;
   margin-right: auto;
   font-weight: 100;
@@ -29,7 +30,7 @@ h1 {
 .rule {
   font-size: x-large;
   font-weight: 800;
-  color:rgb(194, 84, 5);
+  color:honeydew;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -57,11 +58,11 @@ h1 {
   height: 230px;
   overflow-y: auto;
   position: relative;
-  background: #ffe4a6;
-  box-shadow: 0px 0px 0px 5px #ffe4a6;
+  background:olive;
+  box-shadow: 0px 0px 0px 5px olive;
   border: dashed 2px white;
   padding: 0;
-  color: #454545;
+  color:azure;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -75,7 +76,7 @@ h1 {
   top: -7px;
   border-width: 0 15px 15px 0;
   border-style: solid;
-  border-color: #ffdb88 #fff #ffdb88;
+  border-color: olive #fff #ffdb88;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -94,12 +95,13 @@ ul {
 dialog {
   width: 500px;
   height: 60%;
-  vertical-align: auto;
+  background: rgb(218, 218, 203);
 }
 #dialog-open {
   font-size: 30px;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
 }
 #cat-fish {
   width: 300px;
@@ -118,9 +120,19 @@ dialog {
 #bank-borrow{
   background: black;
   color: yellow;
+  font-size: 18px;
 }
 #debt{
   color: red;
   font-weight: 700;
   font-size: 20px;
+}
+button{
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background: darkseagreen;
+  border: 0;
+  border-bottom: 5px solid rgb(108, 142, 108);
 }

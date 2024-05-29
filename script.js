@@ -74,9 +74,9 @@ const passwordCandidates = [
   "akayubotau"
 ];
 
-// 関数
-// レース
-function random() {
+const password = passwordCandidates[index];
+
+startButton.addEventListener("click", () => {
   const selectNumber = document.getElementById("select-number").value;
   const establish = Math.floor(Math.random() * 100);
   let rate = 0;
@@ -100,10 +100,9 @@ function random() {
     recordComment = `${gameconut}回目 結果：${result}  予想:${selectNumber}  ${comment}`;
     face.src = "cry.gif";
   }
-}
+})
 
-// レースの結果
-function oneResult() {
+resultOpen.addEventListener("click", () => {
   dialog.close();
   const oneResultComment = document.getElementById("oneresult-comment");
   oneResultComment.innerText = `${comment} \n 優勝は${animalData[result - 1].Name}でした。`;
@@ -112,12 +111,8 @@ function oneResult() {
   const creatPalagraph = document.createElement("p");
   creatPalagraph.innerText = recordComment;
   resultRecord.prepend(creatPalagraph);
-}
+})
 
-const password = passwordCandidates[index];
-
-startButton.addEventListener("click", random);
-resultOpen.addEventListener("click", oneResult);
 resultClose.addEventListener("click", () => {
   dialogClose.close();
   if (gameconut === 3 || gameconut % 10 === 0) {
@@ -126,8 +121,8 @@ resultClose.addEventListener("click", () => {
   }
 })
 
-passwordShowClose.addEventListener("click", function () { passwordShow.close() });
-secret.addEventListener("click", function () { passwordInput.showModal() });
+passwordShowClose.addEventListener("click", () => { passwordShow.close() });
+secret.addEventListener("click", () => { passwordInput.showModal() });
 passwordSend.addEventListener("click", () => {
   const passwordWrite = document.getElementById("password-write").value;
   if (password === passwordWrite) {

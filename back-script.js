@@ -90,9 +90,24 @@ const passwordCandidates = [
   "akayubotau"
 ];
 
-// 関数
-// レース
-function random() {
+// ODDの計算
+function calculate() {
+  for (let i = 0; i < animalData.length; i++) {
+    let calculatedOdds = 0;
+    calculatedOdds = randomOfOdds(animalData[i].minOdds, animalData[i].maxOdds);
+    animalData[i].Odds.innerText = calculatedOdds;
+  }
+}
+// oddの計算
+function randomOfOdds(minNum, maxNum) {
+  let odds = 0;
+  odds = Math.random() * (maxNum - minNum) + minNum;
+  return parseFloat(odds.toFixed(1));
+}
+
+calculate();
+
+startButton.addEventListener("click", () => {
   const selectNumber = document.getElementById("select-number").value;
   const betOCT = document.getElementById("bet-oct").value;
   const establish = Math.floor(Math.random() * 100);
@@ -125,10 +140,9 @@ function random() {
     changeOdds = `${differenceOct.toLocaleString()} OCTマイナス`;
     face.src = "cry.gif";
   }
-}
+})
 
-// レースの結果
-function oneResult() {
+resultOpen.addEventListener("click", () => {
   dialog.close();
   const oneResultComment = document.getElementById("oneresult-comment");
   oneResultComment.innerText = `${comment} \n 優勝は${animalData[result - 1].Name}でした。\n ${changeOdds}されました。`;
@@ -143,43 +157,23 @@ function oneResult() {
     bankHelp.showModal();
     nowOCT.innerText = `${oct} OCT`;
   }
-}
+})
 
-// 借金
-function borrowOCTBank() {
+resultClose.addEventListener("click", () => {
+  dialogClose.close();
+})
+bankOpen.addEventListener("click", () => {
+  bankHelp.close();
+  bankBorrow.showModal()
+})
+
+borrow.addEventListener("click", () => {
   const borrowOCT = document.getElementById("borrow-oct").value;
   oct += Number(borrowOCT);
   debtSum += Number(borrowOCT);
   myOCT.innerText = `💰 ${oct.toLocaleString()} OCT (▲${differenceOct.toLocaleString()})`;
   debt.innerText = `借金:${debtSum.toLocaleString()} OCT`;
   bankBorrow.close();
-}
+})
 
-// ODDの計算
-function calculate() {
-  for (let i = 0; i < animalData.length; i++) {
-    let calculatedOdds = 0;
-    calculatedOdds = randomOfOdds(animalData[i].minOdds, animalData[i].maxOdds);
-    animalData[i].Odds.innerText = calculatedOdds;
-  }
-}
-// oddの計算
-function randomOfOdds(minNum, maxNum) {
-  let odds = 0;
-  odds = Math.random() * (maxNum - minNum) + minNum;
-  return parseFloat(odds.toFixed(1));
-}
-
-calculate();
-
-startButton.addEventListener("click", random);
-resultOpen.addEventListener("click", oneResult);
-resultClose.addEventListener("click", () => {
-  dialogClose.close();
-});
-bankOpen.addEventListener("click", () => {
-  bankHelp.close();
-  bankBorrow.showModal()
-});
-borrow.addEventListener("click", borrowOCTBank);
 gamefinish.addEventListener("click", function () { location.reload() });

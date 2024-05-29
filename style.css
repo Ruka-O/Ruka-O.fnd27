@@ -4,14 +4,12 @@ body {
   font-family: Meiryo-UI;
   margin: auto;
 }
-
 h1 {
   font-family: Broadway;
   color: chocolate;
   font-size: 80px;
   margin: 0;
 }
-
 .game-rule {
   width: fit-content;
   height: auto;
@@ -25,7 +23,6 @@ h1 {
   font-size: large;
   line-height: 2;
 }
-
 .rule {
   font-size: x-large;
   font-weight: 800;
@@ -33,11 +30,9 @@ h1 {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
 .expected-input {
   text-align: left;
 }
-
 #list {
   text-align: left;
 }
@@ -47,7 +42,6 @@ h1 {
   margin-bottom: 0;
   font-weight: 600;
 }
-
 .messagebox {
   width: 500px;
   height: 230px;
@@ -63,7 +57,6 @@ h1 {
   text-align: left;
   overflow-x: hidden;
 }
-
 .messagebox:after {
   position:absolute;
   content: '';
@@ -74,7 +67,6 @@ h1 {
   border-color: #ffdb88 #fff #ffdb88;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
-
 ul {
   width: 500px;
   margin-left: auto;
@@ -86,7 +78,6 @@ ul {
   text-align: center;
   list-style: none;
 }
-
 dialog {
   width: 550px;
   height: 60%;
